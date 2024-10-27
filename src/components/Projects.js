@@ -24,8 +24,8 @@ const Projects = () => {
             title: 'TaskManager App',
             description: 'The Taskmaster app is a collaborative task management tool that allows users to create and assign tasks to their friends. Upon assignment, friends receive notifications about their new tasks. Users can easily organize their tasks using a drag-and-drop interface to move tasks between "To Do," "In Progress," and "Completed" categories. The app requires user authentication for secure access and is built using React for the frontend and Flask for the backend, ensuring a seamless and interactive user experience.',
             image: project3,
-            repoLink: 'https://github.com/LEAKONO/Task-master',
-            liveLink: 'https://project-three.com'
+            repoLink: 'https://github.com/LEAKONO/task-master-frontend',
+            liveLink: 'https://task-master-frontend-red.vercel.app/'
         },
     ];
 

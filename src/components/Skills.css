@@ -1,21 +1,19 @@
 .skills {
-    padding: 50px 20px; /* Increased padding for more space */
-    background-color: #fff; /* White background for the section */
-    border-radius: 8px; /* Rounded corners for a box-like appearance */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slight shadow for separation */
-    max-width: 800px; /* Max width to keep content centered */
-    margin: 0 auto; /* Centering the section */
-    text-align: center; /* Center text within the section */
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Skills section title styling */
 .skills h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: hsl(123, 89%, 14%); /* Title color */
+    color: hsl(123, 89%, 14%);
 }
 
-/* Skills list styling */
 .skills ul {
     list-style: none;
     padding: 0;
@@ -25,54 +23,49 @@
     gap: 20px;
 }
 
-/* Individual skill item styling */
 .skills li {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f8f9fa; /* Light grey background for skill items */
+    background-color: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow for skill items */
-    max-width: 200px; /* Max width for each skill item */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    max-width: calc(50% - 20px); /* Half width minus spacing for two items per row */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Skill item hover effect */
 .skills li:hover {
-    transform: translateY(-3px); /* Slight lift on hover */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon styling */
 .icon {
-    font-size: 3rem; /* Increased icon size for better visibility */
-    color: #007bff; /* Default color for icons */
+    font-size: 3rem;
+    color: #007bff;
     margin-bottom: 10px;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease;
 }
 
-/* Icon hover effect */
 .icon:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    /* Change to a two-column layout */
     .skills ul {
-        flex-direction: row; /* Keep items in a row */
-        justify-content: space-between; /* Space between items */
+        justify-content: space-between; /* Ensures space between items */
     }
 
     .skills li {
-        max-width: calc(50% - 10px); /* Allow skill items to take half width minus spacing */
-        margin-bottom: 15px; /* Space between items */
-        font-size: 1.2rem; /* Adjust font size for better readability */
+        max-width: calc(50% - 10px); /* Allows two items per row */
+        margin-bottom: 15px;
+        font-size: 1.2rem;
     }
 
     .icon {
-        font-size: 2.5rem; /* Smaller icon size for better visibility on small screens */
+        font-size: 2.5rem;
     }
 }

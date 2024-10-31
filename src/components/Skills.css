@@ -1,3 +1,4 @@
+/* Skills.css */
 .skills {
     padding: 50px 20px;
     background-color: #fff;
@@ -18,9 +19,9 @@
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    justify-content: center; /* Center the list items */
+    gap: 20px; /* Space between items */
 }
 
 .skills li {
@@ -32,7 +33,7 @@
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-    max-width: calc(50% - 20px); /* Half width minus spacing for two items per row */
+    max-width: calc(50% - 20px); /* Two items per row */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -55,17 +56,12 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .skills ul {
-        justify-content: space-between; /* Ensures space between items */
-    }
-
     .skills li {
-        max-width: calc(50% - 10px); /* Allows two items per row */
-        margin-bottom: 15px;
-        font-size: 1.2rem;
+        max-width: calc(100% - 20px); /* Full width on smaller screens */
+        margin-bottom: 15px; /* Space below each item */
     }
 
     .icon {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Slightly smaller icon for mobile */
     }
 }

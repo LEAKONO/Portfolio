@@ -8,10 +8,7 @@ html {
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4f6NfcA_B2ATOX3q7PAyaNYHc1balrG7iuA&s'); */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-color: #e0f7fa;
   color: #333;
   line-height: 1.5;
 }
@@ -29,24 +26,18 @@ a {
 /* Page Content */
 main {
   flex: 1;
-  padding: 2rem; /* Increased padding for better spacing */
-  font-size: 1rem; /* Base font size for better readability */
+  padding: 2rem;
+  font-size: 1rem;
 }
 
-/* Remove any unnecessary spacing between sections */
-.welcome-section,
-.about-section {
-  padding: 2.5rem 1rem; /* Adjust padding for better spacing */
+.welcome-section, .about-section {
+  padding: 2.5rem 1rem;
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   main {
     padding: 1rem;
     font-size: 0.95rem;
-  }
-  .App {
-    flex-direction: column;
   }
 }
 
@@ -68,7 +59,7 @@ main {
 
 footer {
   padding: 1rem;
-  background: rgba(0, 31, 63, 0.9); /* Darkened background for better visibility */
+  background: rgba(0, 31, 63, 0.9);
   color: #ffffff;
   text-align: center;
 }
@@ -83,12 +74,10 @@ img {
   height: auto;
 }
 
-/* Remove the section container and maintain a fluid layout */
 .skills {
-  margin-bottom: 1.25rem; /* Retain if needed for spacing */
+  margin-bottom: 1.25rem;
 }
 
-/* Navigation Accessibility */
 .navbar ul {
   list-style-type: none;
   padding: 0;
@@ -101,11 +90,11 @@ img {
 
 .navbar a {
   color: #333;
-  padding: 0.5rem 1rem; /* Increased padding for better clickability */
-  border-radius: 4px; /* Rounded corners for better touch targets */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
   transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: rgba(0, 31, 63, 0.2); /* Hover effect for better visibility */
+  background-color: rgba(0, 31, 63, 0.2);
 }

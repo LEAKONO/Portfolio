@@ -1,10 +1,11 @@
 /* Navbar.css */
+
 nav {
   background-color: #f8f9fa;
-  padding: 1.5rem 1.5rem;
-  padding-left: 0.2rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   position: sticky;
   top: 0;
   width: 100%;
@@ -35,11 +36,46 @@ nav a:hover {
   color: #E64A19;
 }
 
+/* Hamburger icon styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #8222ff;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  nav {
-    padding: 1rem;
-    justify-content: center;
+  /* Hide the menu items initially */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Show the nav-links when open */
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Show the hamburger icon */
+  .hamburger {
+    display: flex;
   }
 
   nav ul {
@@ -48,10 +84,10 @@ nav a:hover {
   }
 
   nav li {
-    margin: 0.5rem 0; /* Reduced margin for stacked items */
+    margin: 0.5rem 0;
   }
 
   nav a {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-size: 1rem;
   }
 }

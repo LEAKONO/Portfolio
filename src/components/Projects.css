@@ -33,6 +33,12 @@
     max-width: 300px;
     text-align: left;
     flex: 1 1 300px; /* Allow the card to grow and shrink */
+    transition: transform 0.2s ease; /* Add transition for the transform property */
+}
+
+/* Add hover effect to project card */
+.project-card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
 }
 
 /* Project image styling */

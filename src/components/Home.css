@@ -5,14 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem; /* Increased padding for better spacing */
     color: #fff;
 }
 
 .home .welcome-content {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem; /* Increased gap for better spacing */
     max-width: 800px;
     margin: 0 auto;
 }
@@ -25,8 +25,8 @@
 
 /* Profile Picture */
 .home .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 160px; /* Slightly larger for better visibility */
+    height: 160px; /* Slightly larger for better visibility */
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
@@ -41,14 +41,14 @@
 }
 
 .home .text-content h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Increased for better visibility */
     font-weight: 700;
     color: #1e90ff;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .home .text-content h2 {
-    font-size: 1.75rem;
+    font-size: 2rem; /* Increased for better visibility */
     font-weight: 600;
     color: #2e8b57;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
@@ -87,7 +87,7 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .home .welcome-section {
-        padding: 1rem;
+        padding: 2rem; /* Reduced padding for smaller screens */
     }
 
     .home .welcome-content {
@@ -97,20 +97,20 @@
     }
 
     .home .profile-pic {
-        width: 120px;
-        height: 120px;
+        width: 140px; /* Adjusted for better visibility */
+        height: 140px; /* Adjusted for better visibility */
     }
 
     .home .text-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Reduced for smaller screens */
     }
 
     .home .text-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.75rem; /* Reduced for smaller screens */
     }
 
     .home .text-content h3 {
-        font-size: 1.25rem;
+        font-size: 1.5rem; /* Reduced for smaller screens */
     }
 
     .home .about-section {
@@ -118,10 +118,10 @@
     }
 
     .home .about-section h3 {
-        font-size: 1.75rem;
+        font-size: 1.75rem; /* Adjusted for better visibility */
     }
 
     .home .about-section p {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Reduced for smaller screens */
     }
 }

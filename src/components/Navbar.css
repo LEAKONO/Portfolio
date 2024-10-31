@@ -1,14 +1,21 @@
 /* Navbar.css */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures padding is included in width calculations */
+}
+
 nav {
   background-color: #f8f9fa;
-  padding: 1.5rem;
+  padding: 1.5rem; /* Reduced padding further */
   display: flex;
-  justify-content: flex-end;
+  justify-content:flex-end;
   align-items: center;
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 100vw; /* Ensures full viewport width */
+  overflow: visible;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   z-index: 1000;
 }
@@ -18,10 +25,11 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: nowrap;
 }
 
 nav li {
-  margin: 0 1rem;
+  margin: 0 0.5rem; /* Reduced margin further */
 }
 
 nav a {
@@ -30,6 +38,7 @@ nav a {
   font-weight: 600;
   transition: color 0.3s ease;
   font-size: 1.1rem;
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -41,22 +50,26 @@ nav a:hover {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.3rem; /* Reduced padding */
   background: none;
   border: none;
+  margin-right: 15px;
 }
 
 .hamburger .bar {
   width: 25px;
   height: 3px;
   background-color: #8222ff;
-  margin: 4px 0;
+  margin: 3px 0;
   transition: 0.3s;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  /* Hide the menu items initially */
+  nav {
+    padding: 0.5rem; /* Further reduced padding for small screens */
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -66,14 +79,13 @@ nav a:hover {
     background-color: #f8f9fa;
     width: 100%;
     text-align: center;
+    padding: 1rem 0;
   }
 
-  /* Show the nav-links when open */
   .nav-links.open {
     display: flex;
   }
 
-  /* Show the hamburger icon */
   .hamburger {
     display: flex;
   }
@@ -88,6 +100,6 @@ nav a:hover {
   }
 
   nav a {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Further reduced font size */
   }
 }
